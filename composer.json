@@ -1,0 +1,56 @@
+{
+  "name": "grizz-it/services",
+  "description": "A services implementation for PHP applications.",
+  "keywords": [
+    "services",
+    "dependency-injection"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.0",
+    "grizz-it/configuration": "^1.3",
+    "grizz-it/object-factory": "^1.2",
+    "grizz-it/storage": "^1.1",
+    "grizz-it/validator": "^1.1"
+  },
+  "authors": [
+    {
+      "name": "GrizzIT",
+      "homepage": "https://www.grizzit.com/",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "GrizzIt\\Services\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GrizzIt\\Services\\Tests\\": "tests/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "/example",
+      "/tests",
+      "/.gitignore",
+      "/.travis.yml",
+      "/phpunit.xml",
+      "/phpcs.xml",
+      "/PULL_REQUEST_TEMPLATE.md",
+      "/CODE_OF_CONDUCT.md",
+      "/CONTRIBUTING.md"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.5"
+  }
+}
