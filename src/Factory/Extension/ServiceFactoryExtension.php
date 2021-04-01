@@ -61,7 +61,7 @@ class ServiceFactoryExtension implements ServiceFactoryExtensionInterface
 
         $return = $this->objectFactory->create(
             $definition['class'],
-            $definition['parameters']
+            $definition['parameters'] ?? []
         );
 
         if (!isset($definition['cache']) || $definition['cache']) {
